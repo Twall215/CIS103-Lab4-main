@@ -39,31 +39,31 @@ def compare():#The game itself
         print("Computer wins!")
         print(score)
         score["bot score"] +=1      
-
-#    def multi_rounds():
-#        while score['bot score'] < 2 and score['user score'] < 2:
-#           result = compare()
-#            print(result)
-#            if result == "You win!":
-#                score["user score"] +=1
-#                print(score)
-#            elif result == "Computer winds!":
-#                score["bot score"] +=1
-#                print(score)
-#            elif result == "It's a tie!":
-#                score["bot score"]+=1
-#                score["user score"]+=1
-#                print(score)
-#        if score['bot score'] == 2 and score['user score'] < 2:
-#            print("Checkmate! Bot Wins")
-#            print(score)
-#            
-#        elif score['user score'] == 2 and score['bot score'] < 2:
-#            print("Checkmate! You Win")
-#            print(score)
+    
+    
+        while score["bot score"] < 2 and score["user score"] < 2:
+           result = compare()
+           print(result)
+           
+        if result == "You win!":
+                score["user score"] +=1
+                print(score)
+        elif result == "Computer wins!":
+            score["bot score"] +=1
+            print(score)
+        elif result == "It's a tie!":
+            score["bot score"]+=1
+            score["user score"]+=1
+            print(score)
+        if score["bot score"] == 2 and score["user score"] < 2:
+            print("Checkmate! Bot Wins")
+            print(score)    
+        elif score["user score"] == 2 and score["bot score"] < 2:
+            print("Checkmate! You Win")
+            print(score)
        
 if __name__ == "__main__":
-    compare()    
+        compare()
     
 
 
