@@ -1,8 +1,8 @@
-import random
+import random #Needed so computer can make its own choice 
 
  
 
-options = ["Rock", "Paper", "Scissors"]
+options = ["Rock", "Paper", "Scissors"] #List that the computer picks from
 
  
 
@@ -17,7 +17,7 @@ print("You chose: ", user_choice)
 print("Computer chose: ", computer_choice)
 
  
-
+#Game logic
 if user_choice == computer_choice:
 
     print("It's a tie!")
