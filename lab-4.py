@@ -15,11 +15,16 @@ def compare():
 #game logic
     while round <= total_rounds and (score["bot score"] < 2 and score["user score"] < 2):
         #Func counts the rounds and also the scores per round
-        user_choice = input("Choose Rock, Paper, or Scissors: ").strip().title()
+        user_choice = input("Choose: Rock, Paper, or Scissors: ").strip().title()
         computer_choice = random.choice(options)
         print("You chose:", user_choice)
         print("Computer chose:", computer_choice)
 
+        # Invalid choice if user choice is not an option
+        if user_choice not in options:
+            print("Invalid choice! Please choose Rock, Paper, or Scissors.")
+            continue
+        
         if user_choice == computer_choice:
             print (f"Round {round}")
             print("It's a tie!")
