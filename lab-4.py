@@ -1,6 +1,8 @@
 import random
 
 def compare():
+    #Adding a two player option
+    
     #tallys the score and holds in storage until the game is complete
     score = {
         "user score": 0,
