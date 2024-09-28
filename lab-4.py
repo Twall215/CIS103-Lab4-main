@@ -1,7 +1,8 @@
 import random
 
 def compare():
-    score = {#tallys the score
+    #tallys the score and holds in storage until the game is complete
+    score = {
         "user score": 0,
         "bot score": 0
     }
@@ -9,7 +10,7 @@ def compare():
     total_rounds = 3 #Best 2 out of 3
 
     options = ["Rock", "Paper", "Scissors"]
-
+#game logic
     while round <= total_rounds and (score["bot score"] < 2 and score["user score"] < 2):
         #Func counts the rounds and also the scores per round
         user_choice = input("Choose Rock, Paper, or Scissors: ").strip().title()
