@@ -71,7 +71,7 @@ def compare():
         while round <= total_rounds and (scorefor2player["player 1 score"] < 2 and scorefor2player["player 2 score"] < 2):
             #Func counts the rounds and also the scores per round
             user_choice = input("Player 1 Choose: Rock, Paper, or Scissors: ").strip().title()
-            user2_choice = input("Player 2Choose: Rock, Paper, or Scissors: ").strip().title()
+            user2_choice = input("Player 2 Choose: Rock, Paper, or Scissors: ").strip().title()
             print("Player 1 chose:", user_choice)
             print("Player 2 chose:", user2_choice)
 
