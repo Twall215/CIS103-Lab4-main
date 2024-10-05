@@ -1,4 +1,4 @@
-import random
+import random #Needed so computer can make its own choice 
 
 def compare():
     #Choice starts it off
@@ -114,5 +114,4 @@ def compare():
 
 if __name__ == "__main__":
     compare()
-
 
